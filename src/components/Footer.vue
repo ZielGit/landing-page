@@ -1,6 +1,6 @@
 <template>
     <div>
-        This is my Nav component
+        This is my Footer components
     </div>
 </template>
 
