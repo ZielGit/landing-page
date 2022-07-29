@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-customBlue">
         This is my MainHeader component
     </div>
 </template>
