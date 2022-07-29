@@ -1,13 +1,13 @@
 <template>
-    <div class="bg-customBlue">
-        This is my MainHeader component
-    </div>
+  <div 
+    class="MainHeader container mx-auto bg-cover md:bg-contain bg-no-repeat bg-left-top md:bg-center relative -top-32 md:-top-16" 
+    :style="`background-image: url(${PorscheBackground}); height: calc(100vh - 128px);`"
+  >
+  </div>
 </template>
 
-<script>
-export default {
-    
-}
+<script setup>
+import PorscheBackground from '../assets/porsche-model.png'
 </script>
 
 <style lang="scss" scoped>
