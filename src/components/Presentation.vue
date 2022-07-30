@@ -1,12 +1,20 @@
 <template>
     <div>
-        This is my Presentation component
+        {{ content }}
     </div>
 </template>
 
 <script>
 export default {
-    
+    props: {
+        content: {
+            default: () => {},
+            type: Object
+        }
+    },
+    setup(props) {
+        console.log(props.content)
+    }
 }
 </script>
 
