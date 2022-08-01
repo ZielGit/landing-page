@@ -10,6 +10,7 @@ module.exports = {
   theme: {
     colors: {
       customBlue: '#1F336C', //bg-customBlue
+      ...colors
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif']

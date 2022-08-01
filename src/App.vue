@@ -3,9 +3,7 @@
 </script>
 
 <template>
+  <div>
     <Home class="animate__animated animate__fadeIn" />
+  </div>
 </template>
-
-<style scoped>
-
-</style>
