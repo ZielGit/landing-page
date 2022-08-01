@@ -1,14 +1,15 @@
 <template>
     <div class="Tabs">
-        <header class="flex flex-row items-center justify-center mb-4">
+        <header class="flex flex-row items-center justify-center">
             <div v-for="obj, objIndex in tabs" :key="objIndex" class="Tabs-Header-Item px-6 py-4 mx-3 cursor-pointer" :class="objIndex === activeTab ? 'text-customBlue border-b-4 border-customBlue' : 'border-b'" @click="updateActiveTab(objIndex)">
                 {{ obj.title }}
             </div>
         </header>
-        <div class="container mx-auto bg-contain bg-no-repeat flex items-center justify-center" :style="`background-image:url(${getActiveTabContent.imgSrc}); min-height: 600px;`">
-            <div class="mb-16">
-                <h2 class="text-2xl uppercase text-center font-bold mb-4">{{ getActiveTabContent.title }}</h2>
-                <p>{{ getActiveTabContent.description }}</p>
+        <div class="container mx-auto bg-cover lg:bg-contain bg-center bg-no-repeat flex items-center justify-center" :style="`background-image:url(${getActiveTabContent.imgSrc}); min-height: 600px;`">
+            <div class="mb-16 text-white">
+                <h2 class="text-4xl uppercase text-center font-bold mb-4">{{ getActiveTabContent.title }}</h2>
+                <div class="bg-white h-2 w-16 mx-auto mb-16" />
+                <p class="text-center mx-8 lg:mx-24">{{ getActiveTabContent.description }}</p>
             </div>
         </div>
     </div>
